@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///D:/AIUB%20CSe%20file/ADVANCED%20PROGRAMMING%20IN%20WEB%20TECHNOLOGY/Frontend/frontend/src/app/admin/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\n\nexport const metadata: Metadata = {\n  title: \"Admin | Portfolio\",\n  robots: { index: false, follow: false },\n};\n\nexport default function AdminRootLayout({ children }: { children: React.ReactNode }) {\n  return <>{children}</>;\n}\n"],"names":[],"mappings":";;;;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;IACP,QAAQ;QAAE,OAAO;QAAO,QAAQ;IAAM;AACxC;AAEe,SAAS,gBAAgB,EAAE,QAAQ,EAAiC;IACjF,qBAAO;kBAAG;;AACZ","debugId":null}}]
+}
