@@ -19,6 +19,11 @@ export function Navbar() {
     useUIStore();
   const { data: settings } = useSettings();
 
+  // Hide navbar on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
+
   return (
     <>
       <motion.header

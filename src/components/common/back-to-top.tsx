@@ -1,12 +1,19 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useScroll } from "@/hooks/use-scroll";
 import { Button } from "@/components/ui/button";
 import { ChevronUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export function BackToTop() {
+  const pathname = usePathname();
   const { scrollY } = useScroll(400);
+
+  // Hide on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Github, Linkedin, Twitter, Mail, Phone, ExternalLink, Copy, Check } from "lucide-react";
 import { useSettings } from "@/hooks/use-settings";
 import { NAV_LINKS } from "@/constants";
@@ -15,9 +16,15 @@ const socialIcons: Record<string, React.ReactNode> = {
 };
 
 export function Footer() {
+  const pathname = usePathname();
   const { data: settings } = useSettings();
   const [copied, setCopied] = useState(false);
   const currentYear = new Date().getFullYear();
+
+  // Hide footer on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   const handleCopyEmail = async () => {
     if (!settings?.contactEmail) return;

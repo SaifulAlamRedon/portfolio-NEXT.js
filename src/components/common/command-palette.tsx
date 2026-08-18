@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -26,6 +26,12 @@ const icons: Record<string, React.ReactNode> = {
 export function CommandPalette() {
   const { isCommandPaletteOpen, setCommandPaletteOpen } = useUIStore();
   const router = useRouter();
+  const pathname = usePathname();
+
+  // Hide on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {

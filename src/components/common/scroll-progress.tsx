@@ -1,10 +1,17 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useScroll } from "@/hooks/use-scroll";
 import { motion } from "framer-motion";
 
 export function ScrollProgress() {
+  const pathname = usePathname();
   const { scrollProgress } = useScroll();
+
+  // Hide on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   return (
     <motion.div
