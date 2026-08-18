@@ -306,7 +306,7 @@ function HeroSection() {
                                             duration: 0.6,
                                             delay: 0.1
                                         },
-                                        className: "text-5xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-7xl",
+                                        className: "text-5xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-8xl",
                                         children: [
                                             "Hi, I'm",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
@@ -315,7 +315,7 @@ function HeroSection() {
                                                 columnNumber: 27
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gradient",
+                                                className: "bg-clip-text bg-gradient-to-r from-primary via-accent to-primary text-transparent animate-gradient-shift",
                                                 children: displayName
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
@@ -341,10 +341,17 @@ function HeroSection() {
                                             duration: 0.6,
                                             delay: 0.2
                                         },
-                                        className: "mt-5 text-xl font-semibold text-muted-foreground sm:text-2xl",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$typing$2d$animation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TypingAnimation"], {
-                                            words: TYPING_WORDS,
-                                            className: "text-gradient-warm"
+                                        className: "mt-6 text-2xl font-semibold leading-relaxed sm:text-3xl",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "bg-clip-text bg-gradient-to-r from-primary to-accent text-transparent",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$animations$2f$typing$2d$animation$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TypingAnimation"], {
+                                                words: TYPING_WORDS,
+                                                className: ""
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/sections/hero.tsx",
+                                                lineNumber: 96,
+                                                columnNumber: 17
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/hero.tsx",
                                             lineNumber: 95,
@@ -368,11 +375,11 @@ function HeroSection() {
                                             duration: 0.6,
                                             delay: 0.3
                                         },
-                                        className: "mt-6 max-w-lg text-base text-muted-foreground leading-relaxed sm:text-lg",
+                                        className: "mt-8 max-w-lg text-lg text-muted-foreground leading-relaxed sm:text-xl",
                                         children: settings?.aboutMe
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/hero.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -388,73 +395,73 @@ function HeroSection() {
                                             duration: 0.6,
                                             delay: 0.4
                                         },
-                                        className: "mt-9 flex flex-wrap gap-4",
+                                        className: "mt-10 flex flex-wrap gap-4 sm:gap-5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                 asChild: true,
                                                 size: "lg",
                                                 variant: "gradient",
-                                                className: "gap-2",
+                                                className: "gap-2 px-8 h-12 text-base font-medium shadow-xl hover:shadow-2xl transition-all duration-300",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     href: "/projects",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                            className: "h-4 w-4"
+                                                            className: "h-5 w-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                                            lineNumber: 122,
+                                                            lineNumber: 124,
                                                             columnNumber: 19
                                                         }, this),
                                                         "View Projects",
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                            className: "h-4 w-4"
+                                                            className: "h-5 w-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                                            lineNumber: 124,
+                                                            lineNumber: 126,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/sections/hero.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 123,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 120,
+                                                lineNumber: 122,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                                 asChild: true,
                                                 size: "lg",
                                                 variant: "outline",
-                                                className: "border-white/15 bg-white/[0.02]",
+                                                className: "border-white/20 bg-white/[0.05] hover:bg-white/[0.08] h-12 text-base font-medium px-8",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                     href: "/resume",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
-                                                            className: "h-4 w-4"
+                                                            className: "h-5 w-5"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                                            lineNumber: 129,
+                                                            lineNumber: 131,
                                                             columnNumber: 19
                                                         }, this),
                                                         "View Resume"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/sections/hero.tsx",
-                                                    lineNumber: 128,
+                                                    lineNumber: 130,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 127,
+                                                lineNumber: 129,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/hero.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, this),
                                     socialLinks.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -470,14 +477,14 @@ function HeroSection() {
                                             duration: 0.6,
                                             delay: 0.5
                                         },
-                                        className: "mt-8 flex items-center gap-4",
+                                        className: "mt-10 flex items-center gap-5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-sm text-muted-foreground",
+                                                className: "text-sm font-medium text-muted-foreground uppercase tracking-wide",
                                                 children: "Follow me:"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 145,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -490,27 +497,30 @@ function HeroSection() {
                                                         target: "_blank",
                                                         rel: "noopener noreferrer",
                                                         whileHover: {
-                                                            scale: 1.15,
-                                                            y: -2
+                                                            scale: 1.2,
+                                                            y: -3
                                                         },
-                                                        className: "flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary",
+                                                        whileTap: {
+                                                            scale: 0.95
+                                                        },
+                                                        className: "flex h-11 w-11 items-center justify-center rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-accent/10 text-primary transition-all duration-300 hover:border-primary/60 hover:shadow-[0_0_20px_rgba(255,186,32,0.3)]",
                                                         "aria-label": social.label,
                                                         children: social.icon
                                                     }, key, false, {
                                                         fileName: "[project]/src/components/sections/hero.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 151,
                                                         columnNumber: 23
                                                     }, this);
                                                 })
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 144,
+                                                lineNumber: 146,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/hero.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 139,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -545,62 +555,77 @@ function HeroSection() {
                                     className: "relative",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "absolute -inset-5 rounded-full bg-primary/20 blur-3xl animate-pulse-glow"
+                                            className: "absolute -inset-8 rounded-full bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 blur-3xl animate-pulse-glow"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 178,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            className: "absolute -inset-3 rounded-full border border-dashed border-primary/35",
+                                            className: "absolute -inset-4 rounded-full border-2 border-dashed border-primary/40",
                                             animate: {
                                                 rotate: 360
                                             },
                                             transition: {
-                                                duration: 20,
+                                                duration: 25,
                                                 repeat: Infinity,
                                                 ease: "linear"
                                             }
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                            lineNumber: 176,
+                                            lineNumber: 179,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
+                                            className: "absolute -inset-2 rounded-full border border-primary/25",
+                                            animate: {
+                                                rotate: -360
+                                            },
+                                            transition: {
+                                                duration: 30,
+                                                repeat: Infinity,
+                                                ease: "linear"
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/hero.tsx",
+                                            lineNumber: 184,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-72 w-72 overflow-hidden rounded-full border-4 border-primary bg-card shadow-[0_0_0_12px_rgb(255_186_32_/_0.08),0_24px_80px_rgb(0_0_0_/_0.5)] sm:h-80 sm:w-80",
+                                            className: "relative h-72 w-72 overflow-hidden rounded-full border-4 border-primary/80 bg-card shadow-[0_0_0_16px_rgb(255_186_32_/_0.12),0_0_60px_rgb(255_186_32_/_0.2),0_32px_120px_rgb(0_0_0_/_0.4)] sm:h-80 sm:w-80 lg:h-96 lg:w-96",
                                             children: settings?.logo ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 src: settings.logo,
                                                 alt: fullName,
                                                 fill: true,
-                                                className: "object-cover",
-                                                sizes: "320px",
+                                                className: "object-cover transition-transform duration-300 hover:scale-105",
+                                                sizes: "384px",
                                                 priority: true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 183,
+                                                lineNumber: 191,
                                                 columnNumber: 19
                                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "flex h-full items-center justify-center text-6xl font-bold text-gradient",
+                                                className: "flex h-full items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20 text-6xl font-bold text-gradient",
                                                 children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$index$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getInitials"])(fullName)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 200,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/hero.tsx",
-                                            lineNumber: 181,
+                                            lineNumber: 189,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/hero.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                lineNumber: 168,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -619,57 +644,57 @@ function HeroSection() {
                         transition: {
                             delay: 1.5
                         },
-                        className: "absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2",
+                        className: "absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-xs text-muted-foreground",
+                                className: "text-sm text-muted-foreground font-medium",
                                 children: "Scroll to explore"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                lineNumber: 208,
+                                lineNumber: 216,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "h-8 w-5 rounded-full border-2 border-muted-foreground/40 flex items-start justify-center pt-1.5",
+                                className: "h-8 w-5 rounded-full border-2 border-muted-foreground/50 flex items-start justify-center pt-2",
                                 animate: {
                                     opacity: [
                                         1,
-                                        0.5,
+                                        0.3,
                                         1
                                     ]
                                 },
                                 transition: {
-                                    duration: 2,
+                                    duration: 2.5,
                                     repeat: Infinity
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    className: "h-1.5 w-1 rounded-full bg-muted-foreground",
+                                    className: "h-1.5 w-1 rounded-full bg-gradient-to-b from-primary to-accent",
                                     animate: {
                                         y: [
                                             0,
-                                            10,
+                                            12,
                                             0
                                         ]
                                     },
                                     transition: {
-                                        duration: 2,
+                                        duration: 2.5,
                                         repeat: Infinity,
                                         ease: "easeInOut"
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/hero.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 222,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/hero.tsx",
-                                lineNumber: 209,
+                                lineNumber: 217,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/sections/hero.tsx",
-                        lineNumber: 202,
+                        lineNumber: 210,
                         columnNumber: 9
                     }, this)
                 ]

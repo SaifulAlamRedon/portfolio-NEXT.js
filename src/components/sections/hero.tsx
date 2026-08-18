@@ -79,10 +79,10 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-7xl"
+              className="text-5xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-8xl"
             >
               Hi, I&apos;m<br />
-              <span className="text-gradient">{displayName}</span>
+              <span className="bg-clip-text bg-gradient-to-r from-primary via-accent to-primary text-transparent animate-gradient-shift">{displayName}</span>
             </motion.h1>
 
             {/* Typing */}
@@ -90,12 +90,14 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-5 text-xl font-semibold text-muted-foreground sm:text-2xl"
+              className="mt-6 text-2xl font-semibold leading-relaxed sm:text-3xl"
             >
-              <TypingAnimation
-                words={TYPING_WORDS}
-                className="text-gradient-warm"
-              />
+              <span className="bg-clip-text bg-gradient-to-r from-primary to-accent text-transparent">
+                <TypingAnimation
+                  words={TYPING_WORDS}
+                  className=""
+                />
+              </span>
             </motion.div>
 
             {/* Bio */}
@@ -104,7 +106,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="mt-6 max-w-lg text-base text-muted-foreground leading-relaxed sm:text-lg"
+                className="mt-8 max-w-lg text-lg text-muted-foreground leading-relaxed sm:text-xl"
               >
                 {settings?.aboutMe}
               </motion.p>
@@ -115,18 +117,18 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-9 flex flex-wrap gap-4"
+              className="mt-10 flex flex-wrap gap-4 sm:gap-5"
             >
-              <Button asChild size="lg" variant="gradient" className="gap-2">
+              <Button asChild size="lg" variant="gradient" className="gap-2 px-8 h-12 text-base font-medium shadow-xl hover:shadow-2xl transition-all duration-300">
                 <Link href="/projects">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-5 w-5" />
                   View Projects
-                  <ArrowUpRight className="h-4 w-4" />
+                  <ArrowUpRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/15 bg-white/[0.02]">
+              <Button asChild size="lg" variant="outline" className="border-white/20 bg-white/[0.05] hover:bg-white/[0.08] h-12 text-base font-medium px-8">
                 <Link href="/resume">
-                  <Download className="h-4 w-4" />
+                  <Download className="h-5 w-5" />
                   View Resume
                 </Link>
               </Button>
@@ -138,9 +140,9 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-8 flex items-center gap-4"
+                className="mt-10 flex items-center gap-5"
               >
-                <span className="text-sm text-muted-foreground">Follow me:</span>
+                <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Follow me:</span>
                 <div className="flex items-center gap-3">
                   {socialLinks.map(([key, url]) => {
                     const social = socialMap[key];
@@ -151,8 +153,9 @@ export function HeroSection() {
                         href={url as string}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.15, y: -2 }}
-                        className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                        whileHover={{ scale: 1.2, y: -3 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex h-11 w-11 items-center justify-center rounded-xl border border-primary/30 bg-gradient-to-br from-primary/10 to-accent/10 text-primary transition-all duration-300 hover:border-primary/60 hover:shadow-[0_0_20px_rgba(255,186,32,0.3)]"
                         aria-label={social.label}
                       >
                         {social.icon}
@@ -172,24 +175,29 @@ export function HeroSection() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="absolute -inset-5 rounded-full bg-primary/20 blur-3xl animate-pulse-glow" />
+              <div className="absolute -inset-8 rounded-full bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 blur-3xl animate-pulse-glow" />
               <motion.div
-                className="absolute -inset-3 rounded-full border border-dashed border-primary/35"
+                className="absolute -inset-4 rounded-full border-2 border-dashed border-primary/40"
                 animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
               />
-              <div className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-primary bg-card shadow-[0_0_0_12px_rgb(255_186_32_/_0.08),0_24px_80px_rgb(0_0_0_/_0.5)] sm:h-80 sm:w-80">
+              <motion.div
+                className="absolute -inset-2 rounded-full border border-primary/25"
+                animate={{ rotate: -360 }}
+                transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+              />
+              <div className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-primary/80 bg-card shadow-[0_0_0_16px_rgb(255_186_32_/_0.12),0_0_60px_rgb(255_186_32_/_0.2),0_32px_120px_rgb(0_0_0_/_0.4)] sm:h-80 sm:w-80 lg:h-96 lg:w-96">
                 {settings?.logo ? (
                   <Image
                     src={settings.logo}
                     alt={fullName}
                     fill
-                    className="object-cover"
-                    sizes="320px"
+                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    sizes="384px"
                     priority
                   />
                 ) : (
-                  <div className="flex h-full items-center justify-center text-6xl font-bold text-gradient">
+                  <div className="flex h-full items-center justify-center bg-gradient-to-br from-primary/20 to-accent/20 text-6xl font-bold text-gradient">
                     {getInitials(fullName)}
                   </div>
                 )}
@@ -203,18 +211,18 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
         >
-          <span className="text-xs text-muted-foreground">Scroll to explore</span>
+          <span className="text-sm text-muted-foreground font-medium">Scroll to explore</span>
           <motion.div
-            className="h-8 w-5 rounded-full border-2 border-muted-foreground/40 flex items-start justify-center pt-1.5"
-            animate={{ opacity: [1, 0.5, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            className="h-8 w-5 rounded-full border-2 border-muted-foreground/50 flex items-start justify-center pt-2"
+            animate={{ opacity: [1, 0.3, 1] }}
+            transition={{ duration: 2.5, repeat: Infinity }}
           >
             <motion.div
-              className="h-1.5 w-1 rounded-full bg-muted-foreground"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="h-1.5 w-1 rounded-full bg-gradient-to-b from-primary to-accent"
+              animate={{ y: [0, 12, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
             />
           </motion.div>
         </motion.div>

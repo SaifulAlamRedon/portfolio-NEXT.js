@@ -228,6 +228,34 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  /* Gradient animations */
+  .animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  .animate-shimmer {
+    background-size: 200% 100%;
+    animation: shimmer 3s infinite;
+  }
+
+  /* Improved text decorations */
+  .text-shine {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text-shine::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shimmer 3s infinite;
+  }
 }
 
 /* Animations */
@@ -246,6 +274,22 @@
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 @keyframes marquee {
