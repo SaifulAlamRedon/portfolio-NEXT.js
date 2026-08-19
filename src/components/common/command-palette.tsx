@@ -28,12 +28,9 @@ export function CommandPalette() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // Hide on admin pages
-  if (pathname.startsWith("/admin")) {
-    return null;
-  }
-
   useEffect(() => {
+    if (pathname.startsWith("/admin")) return;
+
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
@@ -43,7 +40,12 @@ export function CommandPalette() {
     };
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
-  }, [isCommandPaletteOpen, setCommandPaletteOpen]);
+  }, [isCommandPaletteOpen, pathname, setCommandPaletteOpen]);
+
+  // Hide on admin pages
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   const navigate = (href: string) => {
     router.push(href);
