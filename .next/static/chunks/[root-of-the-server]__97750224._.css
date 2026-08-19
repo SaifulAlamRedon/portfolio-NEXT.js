@@ -2116,16 +2116,6 @@
     border-color: rgb(var(--input));
   }
 
-  .border-muted-foreground\/40 {
-    border-color: rgb(var(--muted-foreground));
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .border-muted-foreground\/40 {
-      border-color: color-mix(in oklab, rgb(var(--muted-foreground)) 40%, transparent);
-    }
-  }
-
   .border-muted-foreground\/50 {
     border-color: rgb(var(--muted-foreground));
   }
@@ -3395,10 +3385,6 @@
 
   .pt-0 {
     padding-top: 0;
-  }
-
-  .pt-1\.5 {
-    padding-top: calc(var(--spacing) * 1.5);
   }
 
   .pt-2 {
