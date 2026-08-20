@@ -10,8 +10,8 @@ import { useSettings } from "@/hooks/use-settings";
 import { getInitials, getSocialLinksFromSettings } from "@/utils";
 
 const TYPING_WORDS = [
-  "Web Developer",
-  "Problem Solver",
+  "Aspiring Full-Stack Developer",
+  "Passionate About Open Source",
   "Building for People",
   "Always Learning",
 ];

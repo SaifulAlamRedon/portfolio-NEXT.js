@@ -35,17 +35,17 @@ export const metadata: Metadata = {
     template: "%s | Portfolio",
   },
   description:
-    "Full-Stack Developer & UI/UX Engineer building premium digital experiences with modern technologies.",
+    "Full-Stack Developer.",
   keywords: ["developer", "portfolio", "full-stack", "react", "nextjs", "typescript"],
-  authors: [{ name: "Portfolio Owner" }],
-  creator: "Portfolio Owner",
+  authors: [{ name: "Portfolio | Full-Stack Developer" }],
+  creator: "Portfolio | Full-Stack Developer",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
     siteName: "Portfolio",
-    title: "Portfolio | Full-Stack Developer",
-    description: "Full-Stack Developer & UI/UX Engineer building premium digital experiences.",
+    title: " Saiful_Alam | Portfolio",
+    description: "Full-Stack Developer ",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
