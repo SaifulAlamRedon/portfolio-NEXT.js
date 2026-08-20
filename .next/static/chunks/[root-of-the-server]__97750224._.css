@@ -323,11 +323,6 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
@@ -389,11 +384,6 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
@@ -513,8 +503,6 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-medium: 500;
@@ -599,54 +587,62 @@
   }
 
   :root {
-    --background: 250 249 246;
-    --foreground: 31 29 25;
+    --background: 245 245 245;
+    --foreground: 17 17 17;
     --card: 255 255 255;
-    --card-foreground: 31 29 25;
+    --card-foreground: 17 17 17;
     --popover: 255 255 255;
-    --popover-foreground: 31 29 25;
-    --primary: 188 132 0;
-    --primary-foreground: 35 25 0;
-    --secondary: 245 241 232;
-    --secondary-foreground: 31 29 25;
-    --muted: 245 241 232;
-    --muted-foreground: 105 98 85;
-    --accent: 214 75 55;
-    --accent-foreground: 255 255 255;
+    --popover-foreground: 17 17 17;
+    --primary: 16 185 129;
+    --primary-foreground: 5 35 25;
+    --secondary: 229 229 229;
+    --secondary-foreground: 17 17 17;
+    --muted: 229 229 229;
+    --muted-foreground: 115 115 115;
+    --accent: 16 185 129;
+    --accent-foreground: 5 35 25;
     --destructive: 239 68 68;
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 188 132 0;
+    --border: 212 212 212;
+    --input: 212 212 212;
+    --ring: 16 185 129;
     --radius: .9rem;
-    --nebula-purple: 255 186 32;
-    --nebula-cyan: 255 222 168;
-    --nebula-violet: 196 141 32;
-    --nebula-pink: 255 85 64;
-    --glass-bg: 255 255 255 / .6;
-    --glass-border: 255 255 255 / .3;
+    --nebula-purple: 115 72 145;
+    --nebula-cyan: 16 185 129;
+    --nebula-violet: 99 102 241;
+    --nebula-pink: 115 72 145;
+    --glass-bg: 255 255 255 / .76;
+    --glass-border: 255 255 255 / .82;
+    --rim-highlight: 255 255 255 / .7;
+    --rim-shadow: 17 17 17 / .1;
   }
 
   .dark {
-    --background: 10 10 10;
-    --foreground: 229 226 225;
-    --card: 18 18 18;
-    --card-foreground: 229 226 225;
-    --popover: 18 18 18;
-    --popover-foreground: 229 226 225;
-    --primary: 255 186 32;
-    --primary-foreground: 39 25 0;
-    --secondary: 255 85 64;
-    --secondary-foreground: 92 0 0;
-    --muted: 28 27 27;
-    --muted-foreground: 213 196 171;
-    --accent: 255 222 168;
-    --accent-foreground: 39 25 0;
+    --background: 11 11 15;
+    --foreground: 245 245 247;
+    --card: 22 22 28;
+    --card-foreground: 245 245 247;
+    --popover: 22 22 28;
+    --popover-foreground: 245 245 247;
+    --primary: 16 185 129;
+    --primary-foreground: 5 35 25;
+    --secondary: 31 31 39;
+    --secondary-foreground: 245 245 247;
+    --muted: 31 31 39;
+    --muted-foreground: 107 114 128;
+    --accent: 16 185 129;
+    --accent-foreground: 5 35 25;
     --destructive: 248 113 113;
     --border: 255 255 255 / .08;
     --input: 255 255 255 / .08;
-    --ring: 255 186 32;
-    --glass-bg: 18 18 18 / .68;
+    --ring: 16 185 129;
+    --nebula-purple: 99 102 241;
+    --nebula-cyan: 16 185 129;
+    --nebula-violet: 99 102 241;
+    --nebula-pink: 16 185 129;
+    --glass-bg: 22 22 28 / .78;
     --glass-border: 255 255 255 / .08;
+    --rim-highlight: 255 255 255 / .04;
+    --rim-shadow: 0 0 0 / .18;
   }
 }
 
@@ -1321,10 +1317,6 @@
     margin-top: calc(var(--spacing) * 8);
   }
 
-  .mt-9 {
-    margin-top: calc(var(--spacing) * 9);
-  }
-
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -1801,10 +1793,6 @@
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-
-  .transform {
-    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
 
   .animate-ping {
@@ -2402,10 +2390,6 @@
     background-color: rgb(var(--muted));
   }
 
-  .bg-muted-foreground {
-    background-color: rgb(var(--muted-foreground));
-  }
-
   .bg-muted\/30 {
     background-color: rgb(var(--muted));
   }
@@ -2447,16 +2431,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-primary\/10 {
       background-color: color-mix(in oklab, rgb(var(--primary)) 10%, transparent);
-    }
-  }
-
-  .bg-primary\/20 {
-    background-color: rgb(var(--primary));
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-primary\/20 {
-      background-color: color-mix(in oklab, rgb(var(--primary)) 20%, transparent);
     }
   }
 
@@ -2566,10 +2540,6 @@
   .bg-gradient-to-tl {
     --tw-gradient-position: to top left in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-
-  .bg-\[linear-gradient\(rgba\(255\,255\,255\,0\.02\)_1px\,transparent_1px\)\,linear-gradient\(to_right\,rgba\(255\,255\,255\,0\.02\)_1px\,transparent_1px\)\] {
-    background-image: linear-gradient(rgba(255, 255, 255, .02) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to right, rgba(255, 255, 255, .02) 1px, rgba(0, 0, 0, 0) 1px);
   }
 
   .from-amber-500\/10 {
@@ -3225,15 +3195,6 @@
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
 
-  .\[mask-image\:radial-gradient\(ellipse_60\%_50\%_at_50\%_50\%\,black\,transparent\)\] {
-    -webkit-mask-image: radial-gradient(60% 50%, #000, rgba(0, 0, 0, 0));
-    mask-image: radial-gradient(60% 50%, #000, rgba(0, 0, 0, 0));
-  }
-
-  .bg-\[size\:60px_60px\] {
-    background-size: 60px 60px;
-  }
-
   .bg-clip-text {
     -webkit-background-clip: text;
     background-clip: text;
@@ -3756,18 +3717,8 @@
     opacity: .75;
   }
 
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgba(0, 0, 0, .1)), 0 1px 2px -1px var(--tw-shadow-color, rgba(0, 0, 0, .1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgba(0, 0, 0, .25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-
-  .shadow-\[0_0_0_12px_rgb\(255_186_32_\/_0\.08\)\,0_24px_80px_rgb\(0_0_0_\/_0\.5\)\] {
-    --tw-shadow: 0 0 0 12px var(--tw-shadow-color, rgba(255, 186, 32, .08)), 0 24px 80px var(--tw-shadow-color, rgba(0, 0, 0, .5));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
@@ -4495,13 +4446,6 @@
   }
 
   @media (min-width: 40rem) {
-    .sm\:text-lg {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-
-  @media (min-width: 40rem) {
     .sm\:text-xl {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -4662,13 +4606,6 @@
   }
 
   @media (min-width: 64rem) {
-    .lg\:text-7xl {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
-    }
-  }
-
-  @media (min-width: 64rem) {
     .lg\:text-8xl {
       font-size: var(--text-8xl);
       line-height: var(--tw-leading, var(--text-8xl--line-height));
@@ -4753,9 +4690,9 @@
   }
 
   .glass-strong {
+    background: rgb(var(--card) / .9);
     -webkit-backdrop-filter: blur(40px) saturate(200%);
-    background: rgba(255, 255, 255, .08);
-    border: 1px solid rgba(255, 255, 255, .12);
+    border: 1px solid rgb(var(--border) / .8);
   }
 
   .text-gradient {
@@ -4785,12 +4722,16 @@
   }
 
   .nebula-bg {
-    background: radial-gradient(ellipse 65% 45% at 75% 2%, rgb(var(--primary) / .09) 0%, transparent 65%), radial-gradient(ellipse 55% 45% at 12% 72%, rgb(var(--secondary) / .045) 0%, transparent 65%), rgb(var(--background));
+    background: radial-gradient(ellipse 60% 48% at 80% 4%, rgb(var(--primary) / .08) 0%, transparent 70%), radial-gradient(ellipse 55% 45% at 12% 72%, rgb(var(--accent) / .045) 0%, transparent 70%), rgb(var(--background));
+  }
+
+  .dark .nebula-bg {
+    background: radial-gradient(ellipse 48% 58% at 76% 20%, rgba(99, 102, 241, .16) 0%, transparent 72%), radial-gradient(ellipse 42% 55% at 8% 24%, rgba(35, 31, 85, .18) 0%, transparent 72%), radial-gradient(ellipse 45% 48% at 92% 78%, rgba(16, 185, 129, .05) 0%, transparent 72%), rgb(var(--background));
   }
 
   .rim-light {
-    border: 1px solid rgba(255, 255, 255, .09);
-    box-shadow: inset 0 1px rgba(255, 255, 255, .04), 0 16px 50px rgba(0, 0, 0, .18);
+    border: 1px solid rgb(var(--border) / .8);
+    box-shadow: inset 0 1px 0 rgb(var(--rim-highlight)), 0 16px 50px rgb(var(--rim-shadow));
   }
 
   .gradient-border {
@@ -4990,31 +4931,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
-}
-
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false
-}
-
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false
-}
-
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false
-}
-
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false
-}
-
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false
 }
 
 @property --tw-space-y-reverse {
