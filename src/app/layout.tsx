@@ -31,26 +31,26 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Portfolio | Full-Stack Developer",
+    default: "Portfolio | Saiful Alam",
     template: "%s | Portfolio",
   },
   description:
     "Full-Stack Developer.",
   keywords: ["developer", "portfolio", "full-stack", "react", "nextjs", "typescript"],
-  authors: [{ name: "Portfolio | Full-Stack Developer" }],
-  creator: "Portfolio | Full-Stack Developer",
+  authors: [{ name: "Saiful Alam" }],
+  creator: "Saiful Alam",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
     siteName: "Portfolio",
-    title: " Saiful_Alam | Portfolio",
+    title: "Portfolio | Saiful Alam",
     description: "Full-Stack Developer ",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio | Full-Stack Developer",
+    title: "Portfolio | Saiful Alam",
     description: "Full-Stack Developer & UI/UX Engineer.",
     images: ["/og.png"],
   },
