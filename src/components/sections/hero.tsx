@@ -51,8 +51,6 @@ export function HeroSection() {
           className="animate-aurora absolute right-[20%] top-[10%] h-[50vh] w-[50vh] rounded-full bg-gradient-to-br from-fuchsia-600/15 to-transparent blur-3xl"
           style={{ animationDelay: "8s", animationDuration: "18s" }}
         />
-        {/* Grid overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,black,transparent)]" />
       </div>
 
       {/* Content */}
