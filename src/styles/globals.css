@@ -32,32 +32,42 @@
     /* Glass */
     --glass-bg: 255 255 255 / 0.72;
     --glass-border: 255 255 255 / 0.78;
+    --rim-highlight: 255 255 255 / 0.7;
+    --rim-shadow: 15 61 54 / 0.1;
   }
 
   .dark {
-    /* Reference UI: ink-black surfaces and amber highlight */
-    --background: 10 10 10;
-    --foreground: 229 226 225;
-    --card: 18 18 18;
-    --card-foreground: 229 226 225;
-    --popover: 18 18 18;
-    --popover-foreground: 229 226 225;
-    --primary: 255 186 32;
-    --primary-foreground: 39 25 0;
-    --secondary: 255 85 64;
-    --secondary-foreground: 92 0 0;
-    --muted: 28 27 27;
-    --muted-foreground: 213 196 171;
-    --accent: 255 222 168;
-    --accent-foreground: 39 25 0;
+    /* Quiet charcoal surfaces with teal and coral accents */
+    --background: 10 20 21;
+    --foreground: 232 241 238;
+    --card: 17 31 31;
+    --card-foreground: 232 241 238;
+    --popover: 17 31 31;
+    --popover-foreground: 232 241 238;
+    --primary: 74 202 183;
+    --primary-foreground: 6 35 31;
+    --secondary: 226 103 76;
+    --secondary-foreground: 255 241 236;
+    --muted: 27 43 42;
+    --muted-foreground: 166 190 184;
+    --accent: 244 178 66;
+    --accent-foreground: 44 28 4;
     --destructive: 248 113 113;
     --border: 255 255 255 / 0.08;
     --input: 255 255 255 / 0.08;
-    --ring: 255 186 32;
+    --ring: 74 202 183;
+
+    /* Dark nebula accents */
+    --nebula-purple: 74 202 183;
+    --nebula-cyan: 120 219 199;
+    --nebula-violet: 244 178 66;
+    --nebula-pink: 226 103 76;
 
     /* Glass dark */
     --glass-bg: 18 18 18 / 0.68;
     --glass-border: 255 255 255 / 0.08;
+    --rim-highlight: 255 255 255 / 0.04;
+    --rim-shadow: 0 0 0 / 0.18;
   }
 }
 
@@ -196,7 +206,7 @@
 
   .rim-light {
     border: 1px solid rgb(var(--border) / 0.8);
-    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7), 0 16px 50px rgb(15 61 54 / 0.1);
+    box-shadow: inset 0 1px 0 rgb(var(--rim-highlight)), 0 16px 50px rgb(var(--rim-shadow));
   }
 
   /* Animated gradient border */
