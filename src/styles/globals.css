@@ -2,36 +2,36 @@
 
 @layer theme {
   :root {
-    /* Warm editorial light theme */
-    --background: 245 245 245;
-    --foreground: 17 17 17;
+    /* Light counterpart to the dark emerald theme */
+    --background: 245 247 247;
+    --foreground: 24 30 29;
     --card: 255 255 255;
-    --card-foreground: 17 17 17;
+    --card-foreground: 24 30 29;
     --popover: 255 255 255;
-    --popover-foreground: 17 17 17;
+    --popover-foreground: 24 30 29;
     --primary: 16 185 129;
     --primary-foreground: 5 35 25;
-    --secondary: 229 229 229;
-    --secondary-foreground: 17 17 17;
-    --muted: 229 229 229;
-    --muted-foreground: 115 115 115;
+    --secondary: 232 236 235;
+    --secondary-foreground: 24 30 29;
+    --muted: 232 236 235;
+    --muted-foreground: 107 114 128;
     --accent: 16 185 129;
     --accent-foreground: 5 35 25;
     --destructive: 239 68 68;
-    --border: 212 212 212;
-    --input: 212 212 212;
+    --border: 226 232 240;
+    --input: 226 232 240;
     --ring: 16 185 129;
     --radius: 0.9rem;
 
     /* Nebula colors */
-    --nebula-purple: 115 72 145;
+    --nebula-purple: 99 102 241;
     --nebula-cyan: 16 185 129;
     --nebula-violet: 99 102 241;
-    --nebula-pink: 115 72 145;
+    --nebula-pink: 16 185 129;
 
     /* Glass */
-    --glass-bg: 255 255 255 / 0.76;
-    --glass-border: 255 255 255 / 0.82;
+    --glass-bg: 255 255 255 / 0.78;
+    --glass-border: 226 232 240 / 0.8;
     --rim-highlight: 255 255 255 / 0.7;
     --rim-shadow: 17 17 17 / 0.1;
   }
