@@ -9,24 +9,24 @@
     --card-foreground: 17 17 17;
     --popover: 255 255 255;
     --popover-foreground: 17 17 17;
-    --primary: 255 185 29;
-    --primary-foreground: 17 17 17;
+    --primary: 16 185 129;
+    --primary-foreground: 5 35 25;
     --secondary: 229 229 229;
     --secondary-foreground: 17 17 17;
     --muted: 229 229 229;
     --muted-foreground: 115 115 115;
-    --accent: 255 185 29;
-    --accent-foreground: 255 255 255;
+    --accent: 16 185 129;
+    --accent-foreground: 5 35 25;
     --destructive: 239 68 68;
     --border: 212 212 212;
     --input: 212 212 212;
-    --ring: 255 185 29;
+    --ring: 16 185 129;
     --radius: 0.9rem;
 
     /* Nebula colors */
     --nebula-purple: 115 72 145;
-    --nebula-cyan: 255 185 29;
-    --nebula-violet: 255 185 29;
+    --nebula-cyan: 16 185 129;
+    --nebula-violet: 99 102 241;
     --nebula-pink: 115 72 145;
 
     /* Glass */
