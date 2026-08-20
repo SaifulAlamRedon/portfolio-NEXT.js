@@ -39,7 +39,7 @@ export function HeroSection() {
   }).filter(([k]) => k in socialMap);
 
   return (
-    <section className="relative min-h-screen overflow-hidden flex items-center pt-20">
+    <section className="relative min-h-[calc(100svh-4rem)] overflow-hidden flex items-center pt-16 sm:min-h-screen sm:pt-20">
       {/* Animated aurora background */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div className="animate-aurora absolute left-[-20%] top-[-30%] h-[80vh] w-[80vh] rounded-full bg-gradient-to-br from-primary/10 via-primary/5 to-transparent blur-3xl" />
@@ -54,8 +54,8 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto w-full max-w-7xl px-5 py-20 sm:px-6 lg:px-8 lg:py-24">
-        <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+      <div className="relative mx-auto w-full max-w-7xl px-5 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+        <div className="grid gap-12 sm:gap-16 lg:grid-cols-2 lg:items-center">
           {/* Left: text */}
           <div>
             {/* Available badge */}
@@ -63,7 +63,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="mb-7 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-primary"
+              className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-primary sm:mb-7 sm:px-4 sm:text-xs"
             >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
@@ -77,7 +77,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-8xl"
+              className="text-4xl font-bold leading-[1.06] tracking-[-0.055em] sm:text-6xl lg:text-8xl"
             >
               Hi, I&apos;m<br />
               <span className="bg-clip-text bg-gradient-to-r from-primary via-accent to-primary text-transparent animate-gradient-shift">{displayName}</span>
@@ -88,7 +88,7 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-2xl font-semibold leading-relaxed sm:text-3xl"
+              className="mt-5 text-xl font-semibold leading-relaxed sm:mt-6 sm:text-3xl"
             >
               <span className="bg-clip-text bg-gradient-to-r from-primary to-accent text-transparent">
                 <TypingAnimation
@@ -104,7 +104,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="mt-8 max-w-lg text-lg text-muted-foreground leading-relaxed sm:text-xl"
+                className="mt-6 max-w-lg text-base text-muted-foreground leading-relaxed sm:mt-8 sm:text-xl"
               >
                 {settings?.aboutMe}
               </motion.p>
@@ -115,16 +115,16 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-10 flex flex-wrap gap-4 sm:gap-5"
+              className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-5"
             >
-              <Button asChild size="lg" variant="gradient" className="gap-2 px-8 h-12 text-base font-medium shadow-xl hover:shadow-2xl transition-all duration-300">
+              <Button asChild size="lg" variant="gradient" className="w-full justify-center gap-2 px-8 h-12 text-base font-medium shadow-xl hover:shadow-2xl transition-all duration-300 sm:w-auto">
                 <Link href="/projects">
                   <Mail className="h-5 w-5" />
                   View Projects
                   <ArrowUpRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/20 bg-white/[0.05] hover:bg-white/[0.08] h-12 text-base font-medium px-8">
+              <Button asChild size="lg" variant="outline" className="w-full justify-center border-white/20 bg-white/[0.05] hover:bg-white/[0.08] h-12 text-base font-medium px-8 sm:w-auto">
                 <Link href="/resume">
                   <Download className="h-5 w-5" />
                   View Resume
@@ -138,7 +138,7 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="mt-10 flex items-center gap-5"
+                className="mt-8 flex flex-wrap items-center gap-4 sm:mt-10 sm:gap-5"
               >
                 <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Follow me:</span>
                 <div className="flex items-center gap-3">
@@ -184,7 +184,7 @@ export function HeroSection() {
                 animate={{ rotate: -360 }}
                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
               />
-              <div className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-primary/80 bg-card shadow-[0_0_0_16px_rgb(255_186_32_/_0.12),0_0_60px_rgb(255_186_32_/_0.2),0_32px_120px_rgb(0_0_0_/_0.4)] sm:h-80 sm:w-80 lg:h-96 lg:w-96">
+              <div className="relative h-60 w-60 overflow-hidden rounded-full border-4 border-primary/80 bg-card shadow-[0_0_0_16px_rgb(255_186_32_/_0.12),0_0_60px_rgb(255_186_32_/_0.2),0_32px_120px_rgb(0_0_0_/_0.4)] sm:h-80 sm:w-80 lg:h-96 lg:w-96">
                 {settings?.logo ? (
                   <Image
                     src={settings.logo}
@@ -209,7 +209,7 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
+          className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 sm:flex"
         >
           <span className="text-sm text-muted-foreground font-medium">Scroll to explore</span>
           <motion.div
