@@ -2,69 +2,69 @@
 
 @layer theme {
   :root {
-    /* Fresh paper light theme */
-    --background: 244 248 246;
-    --foreground: 22 35 34;
+    /* Human editorial light theme */
+    --background: 248 246 241;
+    --foreground: 43 39 34;
     --card: 255 255 255;
-    --card-foreground: 22 35 34;
+    --card-foreground: 43 39 34;
     --popover: 255 255 255;
-    --popover-foreground: 22 35 34;
-    --primary: 13 122 112;
-    --primary-foreground: 248 255 253;
-    --secondary: 232 241 238;
-    --secondary-foreground: 22 64 59;
-    --muted: 232 241 238;
-    --muted-foreground: 75 96 92;
-    --accent: 226 103 76;
+    --popover-foreground: 43 39 34;
+    --primary: 54 91 72;
+    --primary-foreground: 246 251 247;
+    --secondary: 238 232 220;
+    --secondary-foreground: 67 59 48;
+    --muted: 238 232 220;
+    --muted-foreground: 105 96 83;
+    --accent: 188 93 69;
     --accent-foreground: 255 255 255;
     --destructive: 239 68 68;
-    --border: 205 222 216;
-    --input: 205 222 216;
-    --ring: 13 122 112;
+    --border: 224 217 204;
+    --input: 224 217 204;
+    --ring: 54 91 72;
     --radius: 0.9rem;
 
     /* Nebula colors */
-    --nebula-purple: 46 164 151;
-    --nebula-cyan: 181 229 213;
-    --nebula-violet: 244 178 66;
-    --nebula-pink: 226 103 76;
+    --nebula-purple: 91 126 103;
+    --nebula-cyan: 218 195 157;
+    --nebula-violet: 188 137 73;
+    --nebula-pink: 188 93 69;
 
     /* Glass */
-    --glass-bg: 255 255 255 / 0.72;
-    --glass-border: 255 255 255 / 0.78;
+    --glass-bg: 255 255 255 / 0.76;
+    --glass-border: 255 255 255 / 0.82;
     --rim-highlight: 255 255 255 / 0.7;
-    --rim-shadow: 15 61 54 / 0.1;
+    --rim-shadow: 65 52 36 / 0.1;
   }
 
   .dark {
-    /* Quiet charcoal surfaces with teal and coral accents */
-    --background: 10 20 21;
-    --foreground: 232 241 238;
-    --card: 17 31 31;
-    --card-foreground: 232 241 238;
-    --popover: 17 31 31;
-    --popover-foreground: 232 241 238;
-    --primary: 74 202 183;
-    --primary-foreground: 6 35 31;
-    --secondary: 226 103 76;
-    --secondary-foreground: 255 241 236;
-    --muted: 27 43 42;
-    --muted-foreground: 166 190 184;
-    --accent: 244 178 66;
-    --accent-foreground: 44 28 4;
+    /* Warm ink surfaces with quiet natural accents */
+    --background: 24 24 22;
+    --foreground: 238 233 224;
+    --card: 34 34 31;
+    --card-foreground: 238 233 224;
+    --popover: 34 34 31;
+    --popover-foreground: 238 233 224;
+    --primary: 126 182 145;
+    --primary-foreground: 22 49 32;
+    --secondary: 214 121 92;
+    --secondary-foreground: 52 25 17;
+    --muted: 48 47 42;
+    --muted-foreground: 190 181 166;
+    --accent: 232 190 117;
+    --accent-foreground: 52 37 12;
     --destructive: 248 113 113;
     --border: 255 255 255 / 0.08;
     --input: 255 255 255 / 0.08;
-    --ring: 74 202 183;
+    --ring: 126 182 145;
 
     /* Dark nebula accents */
-    --nebula-purple: 74 202 183;
-    --nebula-cyan: 120 219 199;
-    --nebula-violet: 244 178 66;
-    --nebula-pink: 226 103 76;
+    --nebula-purple: 126 182 145;
+    --nebula-cyan: 216 191 137;
+    --nebula-violet: 181 137 82;
+    --nebula-pink: 214 121 92;
 
     /* Glass dark */
-    --glass-bg: 18 18 18 / 0.68;
+    --glass-bg: 34 34 31 / 0.78;
     --glass-border: 255 255 255 / 0.08;
     --rim-highlight: 255 255 255 / 0.04;
     --rim-shadow: 0 0 0 / 0.18;
