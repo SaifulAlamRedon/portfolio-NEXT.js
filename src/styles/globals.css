@@ -3,23 +3,23 @@
 @layer theme {
   :root {
     /* Light counterpart to the dark emerald theme */
-    --background: 245 247 247;
-    --foreground: 24 30 29;
-    --card: 255 255 255;
-    --card-foreground: 24 30 29;
-    --popover: 255 255 255;
-    --popover-foreground: 24 30 29;
+    --background: 28 29 34;
+    --foreground: 245 245 247;
+    --card: 38 39 46;
+    --card-foreground: 245 245 247;
+    --popover: 38 39 46;
+    --popover-foreground: 245 245 247;
     --primary: 16 185 129;
     --primary-foreground: 5 35 25;
-    --secondary: 232 236 235;
-    --secondary-foreground: 24 30 29;
-    --muted: 232 236 235;
-    --muted-foreground: 107 114 128;
+    --secondary: 48 49 57;
+    --secondary-foreground: 245 245 247;
+    --muted: 48 49 57;
+    --muted-foreground: 156 163 175;
     --accent: 16 185 129;
     --accent-foreground: 5 35 25;
     --destructive: 239 68 68;
-    --border: 226 232 240;
-    --input: 226 232 240;
+    --border: 255 255 255 / 0.08;
+    --input: 255 255 255 / 0.08;
     --ring: 16 185 129;
     --radius: 0.9rem;
 
@@ -30,10 +30,10 @@
     --nebula-pink: 16 185 129;
 
     /* Glass */
-    --glass-bg: 255 255 255 / 0.78;
-    --glass-border: 226 232 240 / 0.8;
-    --rim-highlight: 255 255 255 / 0.7;
-    --rim-shadow: 17 17 17 / 0.1;
+    --glass-bg: 38 39 46 / 0.78;
+    --glass-border: 255 255 255 / 0.08;
+    --rim-highlight: 255 255 255 / 0.04;
+    --rim-shadow: 0 0 0 / 0.18;
   }
 
   .dark {
